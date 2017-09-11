@@ -1,0 +1,15 @@
+syntax = "proto3";
+package listingpb;
+
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+
+option (gogoproto.goproto_registration) = true;
+
+message TestMsg {
+  // repeated Foo foos = 1 [(gogoproto.nullable) = false];
+  // Foo bar = 2 [(gogoproto.nullable) = false];
+	map<string,Foo> foo_map = 3 [(gogoproto.nullable) = false];}
+
+message Foo {
+  string bar = 1;
+}

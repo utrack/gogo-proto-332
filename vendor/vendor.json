@@ -1,0 +1,33 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "2XtrajUc7LktpQETiH+H2hbd200=",
+			"path": "github.com/gogo/protobuf/gogoproto",
+			"revision": "2adc21fd136931e0388e278825291678e1d98309",
+			"revisionTime": "2017-08-31T18:35:40Z",
+			"tree": true
+		},
+		{
+			"checksumSHA1": "wn2shNJMwRZpvuvkf1s7h0wvqHI=",
+			"path": "github.com/gogo/protobuf/proto",
+			"revision": "2adc21fd136931e0388e278825291678e1d98309",
+			"revisionTime": "2017-08-31T18:35:40Z"
+		},
+		{
+			"checksumSHA1": "YKBipFlPoMtXUhm7+RZCtmOfQbE=",
+			"path": "github.com/gogo/protobuf/protobuf",
+			"revision": "2adc21fd136931e0388e278825291678e1d98309",
+			"revisionTime": "2017-08-31T18:35:40Z",
+			"tree": true
+		},
+		{
+			"checksumSHA1": "V43vATcAntBhUNDZS7dwhOuA7AI=",
+			"path": "github.com/gogo/protobuf/protoc-gen-gogo/descriptor",
+			"revision": "2adc21fd136931e0388e278825291678e1d98309",
+			"revisionTime": "2017-08-31T18:35:40Z"
+		}
+	],
+	"rootPath": "github.com/utrack"
+}
