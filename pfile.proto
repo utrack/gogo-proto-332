@@ -1,13 +1,21 @@
 syntax = "proto3";
 package listingpb;
 
+// Compile with "protoc -I/usr/local/include -I. -I ./vendor --proto_path . --proto_path vendor/github.com/gogo/protobuf/protobuf --gogofaster_out=plugins=grpc:. pfile.proto"
+
 import "github.com/gogo/protobuf/gogoproto/gogo.proto";
 
 option (gogoproto.goproto_registration) = true;
 
 message TestMsg {
+// If you uncomment this then 
+// proto: no slice oenc for *reflect.rtype = []*reflect.rtype
+// proto: no coders for listingpb.Foo
+// will appear
   // repeated Foo foos = 1 [(gogoproto.nullable) = false];
   // Foo bar = 2 [(gogoproto.nullable) = false];
+
+  // This causes panic
 	map<string,Foo> foo_map = 3 [(gogoproto.nullable) = false];}
 
 message Foo {

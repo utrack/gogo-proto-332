@@ -34,8 +34,7 @@ var _ = math.Inf
 const _ = proto.GoGoProtoPackageIsVersion2 // please upgrade the proto package
 
 type TestMsg struct {
-	// repeated Foo foos = 1 [(gogoproto.nullable) = false];
-	// Foo bar = 2 [(gogoproto.nullable) = false];
+	// This causes panic
 	FooMap map[string]Foo `protobuf:"bytes,3,rep,name=foo_map,json=fooMap" json:"foo_map" protobuf_key:"bytes,1,opt,name=key,proto3" protobuf_val:"bytes,2,opt,name=value"`
 }
 
